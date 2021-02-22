@@ -1,0 +1,50 @@
+.titulo-resultados  
+{
+    margin-left: 1.3em;
+    margin-bottom: .5em;
+    color: #aaa;
+    font-size: 1.5em;
+}
+
+.resultados
+{
+    width: calc(100% - 4em);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    grid-gap: 1em;
+}
+
+.resultados div
+{
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 0.2em;
+}
+
+.resultados div h2
+{
+    width: 100%;
+    margin-block-end: 1em;
+    display: block;
+    font-size: 1em;
+    font-weight: 600;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+}
+
+.resultados div p
+{
+    padding: .5em;
+    color: #888;
+}
+
+.resultados div p:nth-child(even)
+{
+    background-color: #f1f1f1;
+}
+
+.resultados div p:hover
+{
+    background-color: #eaeaea;
+}

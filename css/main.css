@@ -1,0 +1,19 @@
+/*-------------------------Base-------------------------*/
+@import 'base/reset.css';
+@import 'base/fuente.css';
+
+
+
+
+/*------------------------Utils-------------------------*/
+@import 'utils/iconed-buttons.css';
+
+
+
+
+/*----------------------Components----------------------*/
+@import 'components/main-container.css';
+@import 'components/header.css';
+@import 'components/entrada-datos.css';
+@import 'components/resultados.css';
+@import 'components/menu-principal.css';

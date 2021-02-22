@@ -1,0 +1,74 @@
+/*--------------------------------------Iconed buttons-------------------------------------*/
+.iconed-button
+{
+    position: relative;
+    display: inline-block;
+    padding: .5em;
+    overflow: hidden;
+
+    text-decoration: none;
+    font-size: 1.2em;
+
+    border-radius: .1em;
+}
+
+
+.iconed-button span:nth-child(1)
+{
+    position: absolute;
+    display: inline-block;
+    width: 2em;
+    height: 2.2em;
+    margin-left: -.5em;
+    margin-top: -.55em;
+    margin-bottom: -.2em;
+    vertical-align: middle;
+
+    background-color: rgba(0, 0, 0 , 0.1);
+
+    background-size: auto 1.2em;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    transition: width 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+.iconed-button span:nth-child(2)
+{
+    margin-left: 2em;
+    vertical-align: middle;
+    color: #fff;
+    
+    transition: color 0.3s ease-in-out;
+}
+
+.iconed-button:hover span:nth-child(2)
+{
+    color: transparent;
+}
+
+.iconed-button:hover span:nth-child(1)
+{
+    width: 100%;
+}
+
+
+/*-------------------------------------Button colors---------------------------------------*/
+.purpleButton {background-color: #5749C2;}
+.greenButton {background-color: #2ecc71;}
+.redButton {background-color: #ef423f;}
+.yellowButton {background-color: #e0b853;}
+.blueButton {background-color: #0288D1;}
+
+
+
+/*---------------------------------------Button icons--------------------------------------*/
+.editIcon span:nth-child(1){background-image: url('../../imagenes/edit2.svg');   }
+.checkOutIcon span:nth-child(1){background-image: url('../../imagenes/sell2.svg');}
+.deleteIcon span:nth-child(1){background-image: url('../../imagenes/trash2.svg');}
+.cancelIcon span:nth-child(1){background-image: url('../../imagenes/cancel.svg');}
+.acceptIcon span:nth-child(1){background-image: url('../../imagenes/checkmark.svg');}
+.goBackIcon span:nth-child(1){background-image: url('../../imagenes/goBack.svg'); }
+.saveIcon span:nth-child(1){background-image: url('../../imagenes/save.svg');}
+.addCircleIcon span:nth-child(1){background-image: url('../../imagenes/addCircle.svg');}
+.reportIcon span:nth-child(1){background-image: url('../../imagenes/salesReport.svg'); }

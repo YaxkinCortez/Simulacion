@@ -1,0 +1,41 @@
+.menu-principal
+{
+    display: block;
+    width: 80%;
+    max-width: 800px;;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.menu-principal ul a
+{
+    text-decoration: none;
+}
+
+.menu-principal ul li
+{
+    display: block;
+    padding: 1.3em;
+    margin: 0 auto 1em auto;
+    width: calc(100% - 2em);
+    max-width: 800px;
+
+    background-color: white;
+
+    box-shadow: 0 .1em .2em rgba(0, 0, 0, 0.2);
+
+    color: #666;
+
+    font-size: 1.2em;
+
+    border-radius: 0.2em;
+
+    transition: box-shadow 0.5s cubic-bezier(0.680, -0.850, 0.265, 1.550),
+                transform 0.5s cubic-bezier(0.680, -0.850, 0.265, 1.550);;
+}
+
+.menu-principal ul li:hover
+{
+    transform: scale(1.01);
+    box-shadow: 0 .3em .2em rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Algoritmo lineal</title>
+
+        <link rel="stylesheet"  href="../css/main.css">
+
+        <script src="../js/lineal.js"></script>
+        <script src="../js/formformatting.js"></script>
+    </head>
+
+    <body>
+        <!--******************************Encabezado******************************-->
+        <header>
+            <h1>
+                Algoritmo lineal
+            </h1>
+
+            <div class="texto">
+                <p>
+                    Ingrese la semilla, la constante multiplicativa, la constante aditiva y el modulo, enseguida ingrese la cantidad de iteraciones que necesita y de clic en calcular.
+                </p>
+            </div>    
+
+            <a href="../index.html" class="iconed-button purpleButton goBackIcon">
+                <span></span><!--icon-->
+                <span>Menú</span><!--Text-->
+            </a>
+        </header>
+
+
+        <!--***************************Entrada de datos***************************-->
+        <div class="entrada-datos">
+            <input id="semilla" type="text" placeholder="Semilla" onkeyup="onlyNumbers('semilla')">
+            <input id="constanteMp" type="text" placeholder="Constante multiplicativa" onkeyup="onlyNumbers('constanteMp')">
+            <input id="constanteAd" type="text" placeholder="Constante aditiva" onkeyup="onlyNumbers('constanteAd')">
+            <input id="modulo" type="text" placeholder="Modulo" onkeyup="onlyNumbers('modulo')">
+            
+            <input id="cantidad" type="text" placeholder="Cantidad iteraciones" onkeyup="onlyNumbers('cantidad')">
+
+            <a href="#" class="iconed-button greenButton acceptIcon" onclick="lineal()">
+                <span></span><!--icon-->
+                <span>Calcular</span><!--Text-->
+            </a>
+        </div>
+
+
+        <!--******************************Resultados******************************-->
+        <h2 class="titulo-resultados">Resultados</h2>
+
+        <div class="resultados">
+            <div id="resultadosX">
+                <h2>X</h2>
+            </div>
+
+            <div id="resultadosR">
+                <h2>r</h2>
+            </div>
+        </div>
+    </body>
+</html>

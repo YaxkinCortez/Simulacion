@@ -1,0 +1,33 @@
+.entrada-datos
+{
+    width: calc(100% - 4em);
+    padding: 2em;
+}
+
+.entrada-datos input
+{
+    padding: 1em;
+
+    color: #666;
+
+    font-size: .9em;
+
+    border: 1px solid #bbb;
+    border-radius: 0.2em;
+}
+
+.entrada-datos input:not(:first-child)
+{
+    margin-left: 2em;
+}
+
+.entrada-datos input:focus
+{
+    border-color: royalblue;
+}
+
+.entrada-datos .iconed-button
+{
+    vertical-align: middle;
+    margin-left: 2em;
+}

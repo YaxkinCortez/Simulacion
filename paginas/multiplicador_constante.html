@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Multiplicador constante</title>
+
+        <link rel="stylesheet"  href="../css/main.css">
+
+        <script src="../js/multiplicador_constante.js"></script>
+        <script src="../js/formformatting.js"></script>
+    </head>
+
+    <body>
+        <!--******************************Encabezado******************************-->
+        <header>
+            <h1>
+                Algoritmo de multiplicador constante
+            </h1>
+
+            <div class="texto">
+                <p>
+                    Ingrese una semilla y una constante (numero entero ambos) con un mínimo de 3 dígitos, enseguida ingrese la cantidad de iteraciones que necesita y de clic en calcular.
+                </p>
+            </div>    
+
+            <a href="../index.html" class="iconed-button purpleButton goBackIcon">
+                <span></span><!--icon-->
+                <span>Menú</span><!--Text-->
+            </a>
+        </header>
+
+
+        <!--***************************Entrada de datos***************************-->
+        <div class="entrada-datos">
+            <input id="semilla" type="text" placeholder="Semilla (3 digitos o mas)" onkeyup="onlyNumbers('semilla')">
+            <input id="semilla2" type="text" placeholder="Constante (3 digitos o mas)" onkeyup="onlyNumbers('semilla2')">
+            
+            <input id="cantidad" type="text" placeholder="Cantidad iteraciones" onkeyup="onlyNumbers('cantidad')">
+
+            <a href="#" class="iconed-button greenButton acceptIcon" onclick="productos_medios()">
+                <span></span><!--icon-->
+                <span>Calcular</span><!--Text-->
+            </a>
+        </div>
+
+
+        <!--******************************Resultados******************************-->
+        <h2 class="titulo-resultados">Resultados</h2>
+
+        <div class="resultados">
+            <div id="resultadosY">
+                <h2>Y</h2>
+            </div>
+
+            <div id="resultadosX">
+                <h2>X</h2>
+            </div>
+
+            <div id="resultadosR">
+                <h2>r</h2>
+            </div>
+        </div>
+    </body>
+</html>

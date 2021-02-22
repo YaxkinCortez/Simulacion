@@ -1,0 +1,30 @@
+header
+{
+    width: calc(100%- 4em);
+    padding: 2em;
+    background-color: #f1f1f1;
+}
+
+header h1
+{
+    margin-bottom: 1em;
+
+    color: #444;
+
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+header .texto
+{
+    display: block;
+    margin: 0 auto 2em auto; 
+    width: calc(100% - 4em);
+}
+
+header .texto p
+{
+    color: #666;
+
+    font-size: 1.1em;
+}
